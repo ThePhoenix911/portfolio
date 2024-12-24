@@ -24,18 +24,18 @@
 
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
 
         <!-- Home -->
-        <section class="home active">
+        <section id="home" class="autoShow">
             <div class="home-detail">
                 <h1>Kagiso Mabusela</h1>
                 <h2>The 
@@ -45,7 +45,7 @@
                 </h2>
                 <p><span>Self Rule: </span>My life is work, and if I ever feel lonely, that means I'm slacking.</p>
                  <div class="btn-sci">
-                    <a href="#" class="btn">Dowload CV</a>
+                    <a href="/cv_kcm.pdf" class="btn">Download CV</a>
                     <div class="sci">
                         <a href="https://github.com/ThePhoenix911" target="_blank"><i class='bx bxl-github'></i></a>
                         <a href="https://www.linkedin.com/in/kagiso-mabusela-443203269/" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -60,10 +60,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><hr>
 
         <!-- Services -->
-         <section class="services">
+         <section id="services" class="autoShow">
             <h2 class="heading">My <span>Services</span></h2>
             <div class="services-container">
                 <div class="services-box">
@@ -111,43 +111,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, voluptas.</p>
                 </div>
             </div>
-         </section>
+         </section><hr>
 
-         <section class="resume">
+         <section id="resume" class="autoLeftSlide">
             <div class="resume-container">
                 <div class="resume-box">
-                    <button class="resume-btn active">Experience</button>
+                    <button class="resume-btn active">Skills</button>
+                    <button class="resume-btn">Experience</button>
                     <button class="resume-btn">Education</button>
-                    <button class="resume-btn">Skills</button>
                     <button class="resume-btn">About Me</button>
                 </div>
 
                 <div class="resume-box">
-                    <div class="resume-detail experience active">
-                        <h2 class="heading">My <span>Experience</span></h2>
-                        
-                    </div>
 
-                    <div class="resume-detail education">
-                        <h2 class="heading">My <span>Education</span></h2>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, quod. Quisquam, asperiores, nisi, neque suscipit veniam minus voluptatum autem veniam, repudiandae magnam architecto cupiditate ab. Quisquam, asperiores, nisi, neque suscipit veniam minus voluptatum autem veniam, repudiandae magnam architecto cupiditate ab.</p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <p class="year">2021 - 2025</p>
-                                <h3>Diploma in IT</h3><br>
-                                <p class="company">University of South Africa</p>
-                            </div>
-
-                            <div class="resume-item">
-                                <p class="year">2011 - 2015</p>
-                                <h3>National Senior Certificate</h3><br>
-                                <p class="company">Fidelitas Secondary School</p>
-                            </div>
-
-                        </div>
-                    </div>
-        
-                    <div class="resume-detail skills">
+                    <div class="resume-detail skills active">
                         <h2 class="heading">My <span>Skills</span></h2>
                         <div class="resume-list">
                             <div class="resume-item">
@@ -184,6 +161,29 @@
                                 <img src="images/linux.png" id="img-icon">
                                 <span>Linux</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-detail experience">
+                        <h2 class="heading">My <span>Experience</span></h2>
+                        
+                    </div>
+
+                    <div class="resume-detail education">
+                        <h2 class="heading">My <span>Education</span></h2>
+                        <div class="resume-list">
+                            <div class="resume-item">
+                                <p class="year">2021 - 2025</p>
+                                <h3>Diploma in IT</h3><br>
+                                <p class="company">University of South Africa</p>
+                            </div>
+
+                            <div class="resume-item">
+                                <p class="year">2011 - 2015</p>
+                                <h3>National Senior Certificate</h3><br>
+                                <p class="company">Fidelitas Secondary School</p>
+                            </div>
+
                         </div>
                     </div>
             
@@ -223,27 +223,16 @@
                     </div>
                 </div>
             </div>
-         </section>
+         </section><hr>
 
-         <!-- Portfolio -->
-          <section class="portfolio">
+         <!-- Projects -->
+          <section id="project" class="autoRightSlide">
             <h2 class="heading">Latest <span>Project</span></h2>
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <div class="portfolio-detail active">
-                        <p class="numb">01</p>
-                        <h3>Bingo Game</h3>
-                        <p>Android App</p>
-                        <div class="tech">
-                            <p>Java, XML</p>
-                        </div>
-                        <div class="live-github">
-                            <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
-                        </div>
-                    </div>
+            <div class="project-container">
+                <div class="project-box">
 
-                    <div class="portfolio-detail">
-                        <p class="numb">02</p>
+                    <div class="project-detail active">
+                        <p class="numb">01</p>
                         <h3>FST Auto Service</h3>
                         <p>Car Repair and Maintenance Website</p>
                         <div class="tech">
@@ -254,7 +243,21 @@
                         </div>
                     </div>
 
-                    <div class="portfolio-detail">
+                    <div class="project-detail">
+                        <p class="numb">02</p>
+                        <h3>Bingo Game</h3>
+                        <p>Android App</p>
+                        <div class="tech">
+                            <p>Java, XML</p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="project-detail">
                         <p class="numb">03</p>
                         <h3> Bobby’s Car Shop</h3>
                         <p>VB.Net application for Windows</p>
@@ -268,15 +271,15 @@
 
                 </div>
 
-                <div class="portfolio-box">
-                    <div class="portfolio-carousel">
+                <div class="project-box">
+                    <div class="project-carousel">
                         <div class="img-slide">
                             <div class="img-item">
-                                <img src="images/projects/bingoApp.jpg" alt="bingo App img" class="img-contain">
+                                <img src="images/projects/bosch.png" alt="bosch car service website screenshot" class="img-contain">
                             </div>
 
                             <div class="img-item">
-                                <img src="images/projects/bosch.png" alt="bosch car service website screenshot" class="img-contain">
+                                <img src="images/projects/bingoApp.jpg" alt="bingo App img" class="img-contain">
                             </div>
 
                             <div class="img-item">
@@ -291,10 +294,10 @@
                     </div>
                 </div>
             </div>
-          </section>
+          </section><hr>
 
           <!-- Contact -->
-          <section class="contact">
+          <section id="contact" class="autoShow">
             <div class="contact-container">
                 <div class="contact-box">
                     <h2>Let's work together</h2>

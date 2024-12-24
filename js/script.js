@@ -77,21 +77,21 @@ resumeBtns.forEach((btn, idx) => {
     });
 });
 
-const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+const arrowRight = document.querySelector('.project-box .navigation .arrow-right');
+const arrowLeft = document.querySelector('.project-box .navigation .arrow-left');
 
 let index = 0;
 
-const activePortfolio = ()=> {
-    const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
-    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+const activeproject = ()=> {
+    const imgSlide = document.querySelector('.project-carousel .img-slide');
+    const projectDetails = document.querySelectorAll('.project-detail');
 
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
 
-    portfolioDetails.forEach(detail => {
+    projectDetails.forEach(detail => {
         detail.classList.remove('active');
     });
-    portfolioDetails[index].classList.add('active');
+    projectDetails[index].classList.add('active');
 }
 
 
@@ -104,7 +104,7 @@ arrowRight.addEventListener('click', () => {
         arrowRight.classList.add('disabled');
     }
 
-    activePortfolio();
+    activeproject();
 });
 
 arrowLeft.addEventListener('click', () => {
@@ -115,5 +115,5 @@ arrowLeft.addEventListener('click', () => {
         index = 0;
         arrowLeft.classList.add('disabled');
     }
-    activePortfolio();
+    activeproject();
 });
