@@ -540,7 +540,7 @@ section#services {
   font-size: 1.4rem;
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.85);
   transition: color 0.3s ease;
 }
 
@@ -552,7 +552,7 @@ section#services {
 }
 
 .services-box:hover p {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.95);
 }
 
 .resume-container {
